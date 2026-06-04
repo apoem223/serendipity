@@ -1,8 +1,8 @@
-##serendipity
+## serendipity
 
 serendipity是一款简易的旅行地图打卡网站，用户可进入该网站，生成属于自己的旅行地图卡片。本项目是基于VS Code + Vue (Official) (and disable Vetur)所构建的纯前端网站，欢迎您发挥自己的创造力，为本项目增添更多功能。
 
-##开发者需要的运行环境
+## 开发者需要的运行环境
 
 开发者克隆/解压项目后，需要确认本机是否配有以下环境：
 
@@ -28,7 +28,7 @@ A：在终端（PowerShell / CMD / Bash）中运行：
 - vscode编辑器（用于代码编辑）
 - Vue Official 插件（vue开发辅助）
 
-##开发步骤
+## 开发步骤
 
     # 1. 解压 zip 文件
     # 2. 进入项目目录
