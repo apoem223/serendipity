@@ -1,57 +1,49 @@
-# together
+##serendipity
 
-This template should help get you started developing with Vue 3 in Vite.
+serendipity是一款简易的旅行地图打卡网站，用户可进入该网站，生成属于自己的旅行地图卡片。本项目是基于VS Code + Vue (Official) (and disable Vetur)所构建的纯前端网站，欢迎您发挥自己的创造力，为本项目增添更多功能。
 
-## Recommended IDE Setup
+##开发者需要的运行环境
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+开发者克隆/解压项目后，需要确认本机是否配有以下环境：
 
-## Recommended Browser Setup
+必须安装：
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+- Node.js（版本要求为20.19.0 或 >=22.12.0）
+- npm(随 Node.js 一起安装)
 
-## Customize configuration
+Q：如何确认自己是否安装：
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+A：在终端（PowerShell / CMD / Bash）中运行：
 
-## Project Setup
+    # 检查 Node.js 版本
+    node --version
+    
+    # 检查 npm 版本
+    npm --version
+    
+    #若已安装，会跳出对应的版本号
 
-```sh
-npm install
-```
+可选安装：
 
-### Compile and Hot-Reload for Development
+- vscode编辑器（用于代码编辑）
+- Vue Official 插件（vue开发辅助）
 
-```sh
-npm run dev
-```
+##开发步骤
 
-### Compile and Minify for Production
+    # 1. 解压 zip 文件
+    # 2. 进入项目目录
+    cd serendipity
+    
+    # 3. 安装依赖
+    npm install
+    
+    # 4. 启动开发服务器
+    npm run dev
+    
+    # 5. （可选）运行 E2E 测试
+    npx playwright install
+    npm run test:e2e
+    
 
-```sh
-npm run build
-```
+祝您玩的愉快！
 
-### Run End-to-End Tests with [Playwright](https://playwright.dev)
-
-```sh
-# Install browsers for the first run
-npx playwright install
-
-# When testing on CI, must build the project first
-npm run build
-
-# Runs the end-to-end tests
-npm run test:e2e
-# Runs the tests only on Chromium
-npm run test:e2e -- --project=chromium
-# Runs the tests of a specific file
-npm run test:e2e -- tests/example.spec.ts
-# Runs the tests in debug mode
-npm run test:e2e -- --debug
-```
